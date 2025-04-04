@@ -9,51 +9,55 @@ public class TargetsReceiver : MonoBehaviour
     private string rosTopic = "/target_destinations";
     private NavMeshAgent[] agents;
     private Vector3 agent_position;
-
     public bool destination_arrived = false;
 
     void Start()
     {
         ros = ROSConnection.GetOrCreateInstance();
         ros.Subscribe<AgentTargetDestinationsMsg>(rosTopic, ReceiveTargetDestination);
-        agents = FindObjectsByType<NavMeshAgent>(FindObjectsSortMode.None);
+        
     }
 
     private void ReceiveTargetDestination(AgentTargetDestinationsMsg msg)
     {
-       
+        agents = FindObjectsByType<NavMeshAgent>(FindObjectsSortMode.None);
         for (int i = 0; i < msg.agents.Length; i++)  
         {
             agent_position = new Vector3(
                     (float)msg.agents[i].position.x, 
-                    (float)msg.agents[i].position.y, 
+                    (float)msg.agents[i].position.y - 1.3f, 
                     (float)msg.agents[i].position.z
             );
-            Debug.Log("AGENTS POSITION: " + agent_position);
-        }
+            //Debug.Log("AGENTS POSITION: " + agent_position);
 
-        float sphereRadius = 10.0f; 
-        Collider[] colliders = Physics.OverlapSphere(agent_position, sphereRadius);
+            NavMeshAgent closestAgent = null;
+            float minDist = float.MaxValue;
 
-        foreach (Collider collider in colliders)
-        {
-            NavMeshAgent agent = collider.GetComponent<NavMeshAgent>();
-            if (agent != null)
+            foreach (var a in agents)
             {
-                Debug.Log("NavMeshAgent trovato: " + agent.transform.position);
+                float dist = Vector3.Distance(a.transform.position, agent_position);
+                //Debug.Log($"Confronto con: {a.name} || {a.transform.position}, distanza: {dist}");
 
-                for (int i = 0; i < msg.targets.Length; i++)  
+                if (dist < minDist)
                 {
-                    Vector3 destination = new Vector3(
-                        (float)msg.targets[i].x, 
-                        (float)msg.targets[i].y, 
-                        (float)msg.targets[i].z
-                    );
-
-                    agent.SetDestination(destination);
-                    destination_arrived = true;
-                    Debug.Log("Nuova destinazione per agente " + agent.name + ": " + destination);
+                    minDist = dist;
+                    closestAgent = a;
                 }
+            }
+
+            if (closestAgent != null && minDist < 10f)
+            {
+                //Debug.Log($"Agente assegnato trovato: {closestAgent.name}");
+
+                Vector3 destination = new Vector3(
+                    (float)msg.targets[i].x,
+                    (float)msg.targets[i].y,
+                    (float)msg.targets[i].z
+                );
+
+                closestAgent.SetDestination(destination);
+                destination_arrived = true;
+                Debug.Log("Nuova destinazione per agente " + closestAgent.name + ": " + destination);
             }
         }
     }
