@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_msgs/msg/AgentTargetPositions.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "geometry_msgs/msg/Pose.idl"
+
+module custom_msgs {
+  module msg {
+    struct AgentTargetPositions {
+      @verbatim (language="comment", text=
+        "Lista posizioni agenti")
+      sequence<geometry_msgs::msg::Pose> agents;
+
+      @verbatim (language="comment", text=
+        "Lista distance tra agente e target")
+      sequence<float> target_distances;
+
+      @verbatim (language="comment", text=
+        "Lista posizioni target")
+      sequence<geometry_msgs::msg::Point> target_positions;
+    };
+  };
+};
