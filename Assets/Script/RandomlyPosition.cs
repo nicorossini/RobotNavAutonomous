@@ -10,10 +10,10 @@ using System.Collections.Generic;
 public class RandomlyPosition : MonoBehaviour
 {
     public Terrain surface;
-    private int numberOfAgents = 2;
+    private int numberOfAgents = 4;
     public NavMeshAgent agentPrefab;
     public GameObject targetPrefab;
-    private int numberOfTargets = 2;
+    private int numberOfTargets = 4;
 
     private bool agentsPositionated = false;
     private bool targetsPositionated = false;

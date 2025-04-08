@@ -28,7 +28,6 @@ public class TargetsReceiver : MonoBehaviour
                     (float)msg.agents[i].position.y - 1.3f, 
                     (float)msg.agents[i].position.z
             );
-            //Debug.Log("AGENTS POSITION: " + agent_position);
 
             NavMeshAgent closestAgent = null;
             float minDist = float.MaxValue;

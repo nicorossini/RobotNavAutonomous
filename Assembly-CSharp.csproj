@@ -68,6 +68,7 @@
     <Compile Include="Assets/Script/ROS_Messages/AgentTargetMsg.cs" />
     <Compile Include="Assets/Script/PickUpTarget.cs" />
     <Compile Include="Assets/RosMessages/Custom/msg/AgentTargetDestinationsMsg.cs" />
+    <Compile Include="Assets/Script/FoundRemainTargets.cs" />
     <Compile Include="Assets/Script/AutoMovement.cs" />
     <Compile Include="Assets/Script/ROS_Messages/AgentTargetPositions.cs" />
     <Compile Include="Assets/RosMessages/Custom/msg/AgentTargetMsgMsg.cs" />

@@ -416,6 +416,7 @@
 "Assets/RosMessages/Custom/msg/AgentTargetMsgMsg.cs"
 "Assets/RosMessages/Custom/msg/AgentTargetPositionsMsg.cs"
 "Assets/Script/AutoMovement.cs"
+"Assets/Script/FoundRemainTargets.cs"
 "Assets/Script/PickUpTarget.cs"
 "Assets/Script/RandomlyPosition.cs"
 "Assets/Script/ROS_Messages/AgentTargetMsg.cs"
