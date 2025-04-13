@@ -1,19 +1,29 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class FoundRemainTargets : MonoBehaviour
 {
-    PickUpTarget pickUptarget;
+    private PickUpTarget pickUpTarget;
+    private RobotCommunicationManager communicationManager;
+
     void Start()
     {
-        
+        pickUpTarget = GetComponent<PickUpTarget>();
+        communicationManager = GameObject.FindFirstObjectByType<RobotCommunicationManager>();
+
+        if (communicationManager == null)
+        {
+            GameObject managerObj = new GameObject("RobotCommunicationManager");
+            communicationManager = managerObj.AddComponent<RobotCommunicationManager>();
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(pickUptarget.basecamp_arrived == true)
+        if (pickUpTarget != null && pickUpTarget.basecamp_arrived)
         {
-            //da qui parte la comunicazione con messaggi ros
+            // The robot has arrived at a base camp with a target
+            // The communication manager will handle the rest
+            Debug.Log("Robot has arrived at base camp with a target");
         }
     }
 }

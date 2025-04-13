@@ -2,3 +2,5 @@ msg/AgentTargetDestinations.idl
 msg/AgentTargetDestinations.msg
 msg/AgentTargetPositions.idl
 msg/AgentTargetPositions.msg
+msg/RobotCommunicationMsg.idl
+msg/RobotCommunicationMsg.msg

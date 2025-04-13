@@ -1,4 +1,5 @@
 LICENSE
+LICENSE:Zone.Identifier
 README.md
 package.xml
 setup.cfg

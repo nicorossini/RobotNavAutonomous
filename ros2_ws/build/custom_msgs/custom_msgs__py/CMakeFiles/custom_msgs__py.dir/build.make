@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/ros2_ws/src/custom_msgs
+CMAKE_SOURCE_DIR = /root/ros2_ws2/src/custom_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/ros2_ws/build/custom_msgs
+CMAKE_BINARY_DIR = /root/ros2_ws2/build/custom_msgs
 
 # Utility rule file for custom_msgs__py.
 
@@ -71,9 +71,11 @@ custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/_cus
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_agent_target_positions.py
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_agent_target_destinations.py
+custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_robot_communication_msg.py
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/__init__.py
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_agent_target_positions_s.c
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_agent_target_destinations_s.c
+custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_robot_communication_msg_s.c
 
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -90,6 +92,7 @@ rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/AgentTargetPositions.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/AgentTargetDestinations.idl
+rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/RobotCommunicationMsg.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -152,8 +155,8 @@ rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/ubuntu/ros2_ws/build/custom_msgs/custom_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/ubuntu/ros2_ws/build/custom_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros2_ws2/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /root/ros2_ws2/build/custom_msgs/custom_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /root/ros2_ws2/build/custom_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
@@ -167,6 +170,9 @@ rosidl_generator_py/custom_msgs/msg/_agent_target_positions.py: rosidl_generator
 rosidl_generator_py/custom_msgs/msg/_agent_target_destinations.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_agent_target_destinations.py
 
+rosidl_generator_py/custom_msgs/msg/_robot_communication_msg.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_robot_communication_msg.py
+
 rosidl_generator_py/custom_msgs/msg/__init__.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/__init__.py
 
@@ -175,6 +181,9 @@ rosidl_generator_py/custom_msgs/msg/_agent_target_positions_s.c: rosidl_generato
 
 rosidl_generator_py/custom_msgs/msg/_agent_target_destinations_s.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_agent_target_destinations_s.c
+
+rosidl_generator_py/custom_msgs/msg/_robot_communication_msg_s.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_robot_communication_msg_s.c
 
 custom_msgs__py: custom_msgs__py/CMakeFiles/custom_msgs__py
 custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
@@ -185,6 +194,8 @@ custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_agent_target_destinations.
 custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_agent_target_destinations_s.c
 custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_agent_target_positions.py
 custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_agent_target_positions_s.c
+custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_robot_communication_msg.py
+custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_robot_communication_msg_s.c
 custom_msgs__py: custom_msgs__py/CMakeFiles/custom_msgs__py.dir/build.make
 .PHONY : custom_msgs__py
 
@@ -193,10 +204,10 @@ custom_msgs__py/CMakeFiles/custom_msgs__py.dir/build: custom_msgs__py
 .PHONY : custom_msgs__py/CMakeFiles/custom_msgs__py.dir/build
 
 custom_msgs__py/CMakeFiles/custom_msgs__py.dir/clean:
-	cd /home/ubuntu/ros2_ws/build/custom_msgs/custom_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/custom_msgs__py.dir/cmake_clean.cmake
+	cd /root/ros2_ws2/build/custom_msgs/custom_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/custom_msgs__py.dir/cmake_clean.cmake
 .PHONY : custom_msgs__py/CMakeFiles/custom_msgs__py.dir/clean
 
 custom_msgs__py/CMakeFiles/custom_msgs__py.dir/depend:
-	cd /home/ubuntu/ros2_ws/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/ros2_ws/src/custom_msgs /home/ubuntu/ros2_ws/build/custom_msgs/custom_msgs__py /home/ubuntu/ros2_ws/build/custom_msgs /home/ubuntu/ros2_ws/build/custom_msgs/custom_msgs__py /home/ubuntu/ros2_ws/build/custom_msgs/custom_msgs__py/CMakeFiles/custom_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/ros2_ws2/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/ros2_ws2/src/custom_msgs /root/ros2_ws2/build/custom_msgs/custom_msgs__py /root/ros2_ws2/build/custom_msgs /root/ros2_ws2/build/custom_msgs/custom_msgs__py /root/ros2_ws2/build/custom_msgs/custom_msgs__py/CMakeFiles/custom_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : custom_msgs__py/CMakeFiles/custom_msgs__py.dir/depend
 

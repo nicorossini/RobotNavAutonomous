@@ -1,10 +1,11 @@
 {
   "package_name": "custom_msgs",
-  "output_dir": "/home/ubuntu/ros2_ws/build/custom_msgs/rosidl_generator_c/custom_msgs",
+  "output_dir": "/root/ros2_ws2/build/custom_msgs/rosidl_generator_c/custom_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/ubuntu/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/AgentTargetPositions.idl",
-    "/home/ubuntu/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/AgentTargetDestinations.idl"
+    "/root/ros2_ws2/build/custom_msgs/rosidl_adapter/custom_msgs:msg/AgentTargetPositions.idl",
+    "/root/ros2_ws2/build/custom_msgs/rosidl_adapter/custom_msgs:msg/AgentTargetDestinations.idl",
+    "/root/ros2_ws2/build/custom_msgs/rosidl_adapter/custom_msgs:msg/RobotCommunicationMsg.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -84,8 +85,9 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/ubuntu/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/AgentTargetPositions.idl",
-    "/home/ubuntu/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/AgentTargetDestinations.idl",
+    "/root/ros2_ws2/build/custom_msgs/rosidl_adapter/custom_msgs/msg/AgentTargetPositions.idl",
+    "/root/ros2_ws2/build/custom_msgs/rosidl_adapter/custom_msgs/msg/AgentTargetDestinations.idl",
+    "/root/ros2_ws2/build/custom_msgs/rosidl_adapter/custom_msgs/msg/RobotCommunicationMsg.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",

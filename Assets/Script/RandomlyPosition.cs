@@ -13,7 +13,7 @@ public class RandomlyPosition : MonoBehaviour
     private int numberOfAgents = 4;
     public NavMeshAgent agentPrefab;
     public GameObject targetPrefab;
-    private int numberOfTargets = 4;
+    private int numberOfTargets = 6;
 
     private bool agentsPositionated = false;
     private bool targetsPositionated = false;
@@ -27,25 +27,25 @@ public class RandomlyPosition : MonoBehaviour
 
     void Start()
     {
-        
+
         ros = ROSConnection.GetOrCreateInstance();
         ros.RegisterPublisher<AgentTargetPositionsMsg>(rosTopic);
-    
+
 
         PlaceAgentsRandomly();
         PlaceTargetsRandomly();
 
-        if(agentsPositionated && targetsPositionated)
+        if (agentsPositionated && targetsPositionated)
         {
             NavMeshAgent[] navAgents = FindObjectsByType<NavMeshAgent>(FindObjectsSortMode.None);
             GameObject[] targets = GameObject.FindGameObjectsWithTag("TargetObj1");
-            foreach(NavMeshAgent agent in navAgents)
+            foreach (NavMeshAgent agent in navAgents)
             {
                 agentArray.Add(agent);
-                foreach(GameObject target in targets)
+                foreach (GameObject target in targets)
                 {
                     NavMeshPath path = new NavMeshPath();
-                    if(agent.CalculatePath(target.transform.position, path))
+                    if (agent.CalculatePath(target.transform.position, path))
                     {
                         float dist = calculatePathLength(path);
                         agentDistances.Add(dist);
@@ -55,16 +55,16 @@ public class RandomlyPosition : MonoBehaviour
                 //agentDistances.Clear(); 
                 //target_position.Clear();  
             }
-            SendAgentData(agentArray.ToArray(), agentDistances.ToArray(), target_position.ToArray());   
+            SendAgentData(agentArray.ToArray(), agentDistances.ToArray(), target_position.ToArray());
         }
     }
 
-    public void SendAgentData(NavMeshAgent[] agent_array, float[] distances,  Vector3[] targetPositions)
+    public void SendAgentData(NavMeshAgent[] agent_array, float[] distances, Vector3[] targetPositions)
     {
         AgentTargetPositionsMsg msg = new AgentTargetPositionsMsg();
 
         msg.agents = new PoseMsg[agent_array.Length];
-        for(int i = 0; i < agent_array.Length; i++)
+        for (int i = 0; i < agent_array.Length; i++)
         {
             msg.agents[i] = new PoseMsg(
                 new PointMsg(agent_array[i].transform.position.x,
@@ -96,7 +96,7 @@ public class RandomlyPosition : MonoBehaviour
         msg.target_distances = distances;
 
         msg.target_positions = new PointMsg[targetPositions.Length];
-        for(int i = 0; i < targetPositions.Length; i++)
+        for (int i = 0; i < targetPositions.Length; i++)
         {
             msg.target_positions[i] = new PointMsg(targetPositions[i].x, targetPositions[i].y, targetPositions[i].z);
         }
@@ -121,7 +121,7 @@ public class RandomlyPosition : MonoBehaviour
 
     private void PlaceAgentsRandomly()
     {
-       for (int i = 0; i < numberOfAgents; i++)
+        for (int i = 0; i < numberOfAgents; i++)
         {
             Vector3 randomPosition;
             if (GetRandomNavMeshPosition(out randomPosition))
@@ -138,7 +138,7 @@ public class RandomlyPosition : MonoBehaviour
 
     private void PlaceTargetsRandomly()
     {
-       for (int i = 0; i < numberOfTargets; i++)
+        for (int i = 0; i < numberOfTargets; i++)
         {
             Vector3 randomPosition;
             if (GetRandomNavMeshPosition(out randomPosition))
@@ -155,10 +155,10 @@ public class RandomlyPosition : MonoBehaviour
 
     private bool GetRandomNavMeshPosition(out Vector3 position)
     {
-        int maxAttempts = 100; 
+        int maxAttempts = 100;
         for (int i = 0; i < maxAttempts; i++)
         {
-            
+
             float randomX = Random.Range(0, surface.terrainData.size.x - 20.0f);  // - offset per non generarli nei bordi
             float randomZ = Random.Range(0, surface.terrainData.size.z - 20.0f);
             float y = surface.SampleHeight(new Vector3(randomX, 0, randomZ)) + 1.0f; // Altezza del terreno + offset
@@ -189,10 +189,10 @@ public class RandomlyPosition : MonoBehaviour
             Bounds obstacleBounds = new Bounds(obstacle.transform.position, obstacle.size);
             if (obstacleBounds.Contains(position))
             {
-                return true; 
+                return true;
             }
         }
         return false;
     }
-   
+
 }

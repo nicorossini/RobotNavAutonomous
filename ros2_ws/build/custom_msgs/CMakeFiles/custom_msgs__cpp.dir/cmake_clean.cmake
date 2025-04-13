@@ -10,6 +10,11 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_positions__struct.hpp"
   "rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_positions__traits.hpp"
   "rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_positions__type_support.hpp"
+  "rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__builder.hpp"
+  "rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__struct.hpp"
+  "rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__traits.hpp"
+  "rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__type_support.hpp"
+  "rosidl_generator_cpp/custom_msgs/msg/robot_communication_msg.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

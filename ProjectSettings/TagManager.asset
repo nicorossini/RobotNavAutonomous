@@ -8,6 +8,7 @@ TagManager:
   - TargetObj1
   - NavMeshRobot
   - BaseCamp
+  - Agent
   layers:
   - Default
   - TransparentFX

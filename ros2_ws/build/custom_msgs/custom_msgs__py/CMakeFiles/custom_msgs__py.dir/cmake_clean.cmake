@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/custom_msgs/msg/_agent_target_destinations_s.c"
   "../rosidl_generator_py/custom_msgs/msg/_agent_target_positions.py"
   "../rosidl_generator_py/custom_msgs/msg/_agent_target_positions_s.c"
+  "../rosidl_generator_py/custom_msgs/msg/_robot_communication_msg.py"
+  "../rosidl_generator_py/custom_msgs/msg/_robot_communication_msg_s.c"
   "CMakeFiles/custom_msgs__py"
 )
 

@@ -14,66 +14,64 @@ public class PickUpTarget : MonoBehaviour
     private GameObject[] basecamps;
     public bool basecamp_arrived;
     private bool picked;
+    private bool hasReleasedTarget = false;
 
-    
     void Start()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "TargetObj1")
+        if (other.gameObject.tag == "TargetObj1")
         {
-            
             target = other.gameObject;
         }
     }
+
     private void OnTriggerExit(Collider other)
     {
-        if(other.gameObject.tag == "TargetObj1")
+        if (other.gameObject.tag == "TargetObj1")
         {
             target = null;
-            
         }
     }
 
     void Update()
     {
-        if(auto_movement.target_found == true && auto_movement.cubeTarget != null)
+        if (auto_movement.target_found == true && auto_movement.cubeTarget != null)
         {
             target = auto_movement.cubeTarget;
-            if(!readyForPickUp)
+            if (!readyForPickUp)
             {
                 rotateArm(target.transform);
             }
-            if(picked)
+            if (picked && !hasReleasedTarget)
             {
                 float dist = Vector3.Distance(auto_movement.navmeshagent.transform.position, auto_movement.navmeshagent.destination);
                 //Debug.Log(dist);
-                if(dist < 20.5)
+                if (dist < 20.5)
                 {
                     basecamp_arrived = true;
                     releaseTarget();
+                    hasReleasedTarget = true;
                 }
             }
-            
         }
-        
     }
 
     private void rotateArm(Transform target)
     {
-        distanceArm = Vector3.Distance(transform.position, target.position); 
+        distanceArm = Vector3.Distance(transform.position, target.position);
 
         armPivot.transform.Rotate(armPivotRotation, 0, 0);
 
-        if(distanceArm < rangeForPick)
+        if (distanceArm < rangeForPick)
         {
             pickUpTarget();
             foundNearestBaseCamp(auto_movement.navmeshagent.transform.position);
-        }   
-    } 
+        }
+    }
 
     private void pickUpTarget()
     {
@@ -84,22 +82,31 @@ public class PickUpTarget : MonoBehaviour
         readyForPickUp = true;
         armPivot.transform.Rotate(-15, 0, 0);
         picked = true;
+        hasReleasedTarget = false;
     }
+
     private void releaseTarget()
     {
+        if (target == null || hasReleasedTarget) return;
+
         target.transform.SetParent(null);
         target.GetComponent<Rigidbody>().isKinematic = false;
         target.GetComponent<Rigidbody>().useGravity = true;
         target.transform.position = auto_movement.navmeshagent.destination;
         Debug.Log("Target released");
+
+        // Reset delle variabili di stato
+        auto_movement.cubeTarget = null;
+        readyForPickUp = false;
+        picked = false;
     }
 
     private void foundNearestBaseCamp(Vector3 navPosition)
     {
         basecamps = GameObject.FindGameObjectsWithTag("BaseCamp");
-        if(basecamps == null)
+        if (basecamps == null)
             Debug.Log("No basecamp");
-        
+
         GameObject nearestCamp = null;
         float minDistance = float.MaxValue;
 
@@ -118,5 +125,13 @@ public class PickUpTarget : MonoBehaviour
             auto_movement.navmeshagent.SetDestination(nearestCamp.transform.position);
             Debug.Log("Nearest BaseCamp: " + nearestCamp.transform.position + " at distance: " + minDistance);
         }
+    }
+
+    public void ResetForNewTarget()
+    {
+        hasReleasedTarget = false;
+        basecamp_arrived = false;
+        readyForPickUp = false;
+        picked = false;
     }
 }

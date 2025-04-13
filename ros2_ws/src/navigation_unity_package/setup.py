@@ -20,9 +20,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-               'target_subscriber = navigation_unity_package.my_subscriber:main',
+            'target_subscriber = navigation_unity_package.my_subscriber:main',
 	       'agent_target_publisher = navigation_unity_package.agent_target_publisher:main',
 	       'agent_distance_subscriber = navigation_unity_package.agent_distance_subscriber:main',
+           'robot_communication_node = navigation_unity_package.robot_communication_node:main',
         ],
     },
 )

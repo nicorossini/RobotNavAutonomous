@@ -3,10 +3,13 @@ file(REMOVE_RECURSE
   "CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/agent_target_destinations__type_support.cpp.o.d"
   "CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/agent_target_positions__type_support.cpp.o"
   "CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/agent_target_positions__type_support.cpp.o.d"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/robot_communication_msg__type_support.cpp.o"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/robot_communication_msg__type_support.cpp.o.d"
   "libcustom_msgs__rosidl_typesupport_c.pdb"
   "libcustom_msgs__rosidl_typesupport_c.so"
   "rosidl_typesupport_c/custom_msgs/msg/agent_target_destinations__type_support.cpp"
   "rosidl_typesupport_c/custom_msgs/msg/agent_target_positions__type_support.cpp"
+  "rosidl_typesupport_c/custom_msgs/msg/robot_communication_msg__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

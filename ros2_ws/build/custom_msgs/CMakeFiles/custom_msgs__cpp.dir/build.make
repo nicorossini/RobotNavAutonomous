@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/ros2_ws/src/custom_msgs
+CMAKE_SOURCE_DIR = /root/ros2_ws2/src/custom_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/ros2_ws/build/custom_msgs
+CMAKE_BINARY_DIR = /root/ros2_ws2/build/custom_msgs
 
 # Utility rule file for custom_msgs__cpp.
 
@@ -76,6 +76,11 @@ CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_t
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__struct.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__traits.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__type_support.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/robot_communication_msg.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__type_support.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -95,6 +100,7 @@ rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: /opt/ros/humble
 rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: rosidl_adapter/custom_msgs/msg/AgentTargetPositions.idl
 rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: rosidl_adapter/custom_msgs/msg/AgentTargetDestinations.idl
+rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: rosidl_adapter/custom_msgs/msg/RobotCommunicationMsg.idl
 rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -157,8 +163,8 @@ rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: /opt/ros/humble
 rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/ubuntu/ros2_ws/build/custom_msgs/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros2_ws2/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /root/ros2_ws2/build/custom_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_positions__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_positions__builder.hpp
@@ -187,6 +193,21 @@ rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__traits.hp
 rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__type_support.hpp
 
+rosidl_generator_cpp/custom_msgs/msg/robot_communication_msg.hpp: rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/robot_communication_msg.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__builder.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__struct.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__traits.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__type_support.hpp
+
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/agent_target_destinations.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp
@@ -198,6 +219,11 @@ custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_posit
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_positions__struct.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_positions__traits.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_positions__type_support.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/robot_communication_msg__type_support.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/robot_communication_msg.hpp
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp.dir/build.make
 .PHONY : custom_msgs__cpp
 
@@ -210,6 +236,6 @@ CMakeFiles/custom_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/custom_msgs__cpp.dir/clean
 
 CMakeFiles/custom_msgs__cpp.dir/depend:
-	cd /home/ubuntu/ros2_ws/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/ros2_ws/src/custom_msgs /home/ubuntu/ros2_ws/src/custom_msgs /home/ubuntu/ros2_ws/build/custom_msgs /home/ubuntu/ros2_ws/build/custom_msgs /home/ubuntu/ros2_ws/build/custom_msgs/CMakeFiles/custom_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/ros2_ws2/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/ros2_ws2/src/custom_msgs /root/ros2_ws2/src/custom_msgs /root/ros2_ws2/build/custom_msgs /root/ros2_ws2/build/custom_msgs /root/ros2_ws2/build/custom_msgs/CMakeFiles/custom_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_msgs__cpp.dir/depend
 

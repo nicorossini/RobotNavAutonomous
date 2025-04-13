@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/ros2_ws/src/custom_msgs
+CMAKE_SOURCE_DIR = /root/ros2_ws2/src/custom_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/ros2_ws/build/custom_msgs
+CMAKE_BINARY_DIR = /root/ros2_ws2/build/custom_msgs
 
 # Include any dependencies generated for this target.
 include CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/depend.make
@@ -79,6 +79,7 @@ rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__ros
 rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em
 rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/custom_msgs/msg/AgentTargetPositions.idl
 rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/custom_msgs/msg/AgentTargetDestinations.idl
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/custom_msgs/msg/RobotCommunicationMsg.idl
 rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -141,8 +142,8 @@ rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__ros
 rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support for eProsima Fast-RTPS"
-	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c --generator-arguments-file /home/ubuntu/ros2_ws/build/custom_msgs/rosidl_typesupport_fastrtps_c__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/ros2_ws2/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support for eProsima Fast-RTPS"
+	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c --generator-arguments-file /root/ros2_ws2/build/custom_msgs/rosidl_typesupport_fastrtps_c__arguments.json
 
 rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp
@@ -153,44 +154,66 @@ rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__
 rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp
 
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp
+
 CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.o: CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp
 CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.o: CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.o -MF CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.o.d -o CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.o -c /home/ubuntu/ros2_ws/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ros2_ws2/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.o -MF CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.o.d -o CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.o -c /root/ros2_ws2/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp
 
 CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/ros2_ws/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp > CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ros2_ws2/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp > CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.i
 
 CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ros2_ws/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp -o CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ros2_ws2/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp -o CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.s
 
 CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.o: CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp
 CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.o: CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.o -MF CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.o.d -o CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.o -c /home/ubuntu/ros2_ws/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ros2_ws2/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.o -MF CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.o.d -o CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.o -c /root/ros2_ws2/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp
 
 CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/ros2_ws/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp > CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ros2_ws2/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp > CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.i
 
 CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ros2_ws/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp -o CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ros2_ws2/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp -o CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.s
+
+CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp.o: CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp
+CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp.o: CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ros2_ws2/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp.o -MF CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp.o.d -o CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp.o -c /root/ros2_ws2/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp
+
+CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ros2_ws2/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp > CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp.i
+
+CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ros2_ws2/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp -o CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp.s
 
 # Object files for target custom_msgs__rosidl_typesupport_fastrtps_c
 custom_msgs__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.o" \
-"CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.o"
+"CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.o" \
+"CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp.o"
 
 # External object files for target custom_msgs__rosidl_typesupport_fastrtps_c
 custom_msgs__rosidl_typesupport_fastrtps_c_EXTERNAL_OBJECTS =
 
 libcustom_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.o
 libcustom_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.o
+libcustom_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp.o
 libcustom_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/build.make
 libcustom_msgs__rosidl_typesupport_fastrtps_c.so: libcustom_msgs__rosidl_generator_c.so
 libcustom_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
@@ -206,7 +229,7 @@ libcustom_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libbuiltin
 libcustom_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcustom_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librcutils.so
 libcustom_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/ros2_ws/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/ros2_ws2/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -221,6 +244,8 @@ CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesup
 CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp
 CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp
-	cd /home/ubuntu/ros2_ws/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/ros2_ws/src/custom_msgs /home/ubuntu/ros2_ws/src/custom_msgs /home/ubuntu/ros2_ws/build/custom_msgs /home/ubuntu/ros2_ws/build/custom_msgs /home/ubuntu/ros2_ws/build/custom_msgs/CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake --color=$(COLOR)
+CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/robot_communication_msg__type_support_c.cpp
+	cd /root/ros2_ws2/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/ros2_ws2/src/custom_msgs /root/ros2_ws2/src/custom_msgs /root/ros2_ws2/build/custom_msgs /root/ros2_ws2/build/custom_msgs /root/ros2_ws2/build/custom_msgs/CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/depend
 

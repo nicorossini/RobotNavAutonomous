@@ -118556,6 +118556,7 @@ MonoBehaviour:
   readyForPickUp: 0
   auto_movement: {fileID: 7264565662176525136}
   armPivot: {fileID: 2546505298147427548}
+  basecamp_arrived: 0
 --- !u!1 &5228414337830427396
 GameObject:
   m_ObjectHideFlags: 0

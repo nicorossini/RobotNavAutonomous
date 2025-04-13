@@ -8,6 +8,7 @@ Maintainer-email: unity-robotics@unity3d.com
 License: Apache 2.0
 Platform: UNKNOWN
 License-File: LICENSE
+License-File: LICENSE:Zone.Identifier
 
 UNKNOWN
 

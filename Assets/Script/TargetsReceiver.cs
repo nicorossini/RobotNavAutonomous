@@ -15,17 +15,17 @@ public class TargetsReceiver : MonoBehaviour
     {
         ros = ROSConnection.GetOrCreateInstance();
         ros.Subscribe<AgentTargetDestinationsMsg>(rosTopic, ReceiveTargetDestination);
-        
+
     }
 
     private void ReceiveTargetDestination(AgentTargetDestinationsMsg msg)
     {
         agents = FindObjectsByType<NavMeshAgent>(FindObjectsSortMode.None);
-        for (int i = 0; i < msg.agents.Length; i++)  
+        for (int i = 0; i < msg.agents.Length; i++)
         {
             agent_position = new Vector3(
-                    (float)msg.agents[i].position.x, 
-                    (float)msg.agents[i].position.y - 1.3f, 
+                    (float)msg.agents[i].position.x,
+                    (float)msg.agents[i].position.y - 1.3f,
                     (float)msg.agents[i].position.z
             );
 
@@ -62,6 +62,6 @@ public class TargetsReceiver : MonoBehaviour
     }
     void Update()
     {
-        
+
     }
 }

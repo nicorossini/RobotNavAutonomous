@@ -1,0 +1,202 @@
+[0.021s] Invoking command in '/root/ros2_ws2/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws2/install/ros_tcp_endpoint:/root/ros2_ws2/install/navigation_unity_package:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws2/build/custom_msgs -- -j16 -l16
+[0.219s] [  2%] Built target custom_msgs__cpp
+[0.220s] [ 12%] Built target custom_msgs__rosidl_generator_c
+[0.220s] [ 12%] Built target ament_cmake_python_copy_custom_msgs
+[0.220s] [ 23%] Built target custom_msgs__rosidl_typesupport_cpp
+[0.220s] [ 34%] Built target custom_msgs__rosidl_typesupport_introspection_cpp
+[0.220s] [ 44%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp
+[0.220s] [ 55%] Built target custom_msgs__rosidl_typesupport_introspection_c
+[0.220s] [ 72%] Built target custom_msgs__rosidl_typesupport_fastrtps_c
+[0.220s] [ 76%] Built target custom_msgs__rosidl_typesupport_c
+[0.221s] [ 76%] Built target custom_msgs
+[0.221s] [ 78%] Built target custom_msgs__py
+[0.221s] [ 87%] Built target custom_msgs__rosidl_generator_py
+[0.221s] [ 91%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext
+[0.221s] [ 97%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.221s] [100%] Built target custom_msgs__rosidl_typesupport_c__pyext
+[0.284s] running egg_info
+[0.285s] writing custom_msgs.egg-info/PKG-INFO
+[0.285s] writing dependency_links to custom_msgs.egg-info/dependency_links.txt
+[0.285s] writing top-level names to custom_msgs.egg-info/top_level.txt
+[0.288s] reading manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[0.289s] writing manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[0.307s] [100%] Built target ament_cmake_python_build_custom_msgs_egg
+[0.401s] Invoked command in '/root/ros2_ws2/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws2/install/ros_tcp_endpoint:/root/ros2_ws2/install/navigation_unity_package:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws2/build/custom_msgs -- -j16 -l16
+[0.410s] Invoking command in '/root/ros2_ws2/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws2/install/ros_tcp_endpoint:/root/ros2_ws2/install/navigation_unity_package:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws2/build/custom_msgs
+[0.416s] -- Install configuration: ""
+[0.417s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs
+[0.417s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.417s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.418s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.418s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/robot_communication_msg.h
+[0.418s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/agent_target_positions.h
+[0.418s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/agent_target_destinations.h
+[0.418s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/robot_communication.h
+[0.418s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.419s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication__type_support.h
+[0.419s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication_msg__functions.c
+[0.419s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication__struct.h
+[0.419s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__type_support.h
+[0.419s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication_msg__struct.h
+[0.419s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication_msg__type_support.h
+[0.419s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__functions.h
+[0.419s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__struct.h
+[0.419s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication__functions.h
+[0.419s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__struct.h
+[0.419s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__functions.c
+[0.419s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__type_support.h
+[0.419s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication__functions.c
+[0.419s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication_msg__functions.h
+[0.419s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__functions.h
+[0.420s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__functions.c
+[0.420s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/environment/library_path.sh
+[0.420s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/environment/library_path.dsv
+[0.420s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so
+[0.420s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.420s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.420s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.420s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.420s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_c.h
+[0.420s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication__rosidl_typesupport_fastrtps_c.h
+[0.421s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__rosidl_typesupport_fastrtps_c.h
+[0.421s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication_msg__rosidl_typesupport_fastrtps_c.h
+[0.421s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so
+[0.421s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.421s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.421s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/agent_target_positions.hpp
+[0.421s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/agent_target_destinations.hpp
+[0.422s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.422s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/robot_communication_msg.hpp
+[0.422s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/robot_communication.hpp
+[0.422s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.422s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication_msg__builder.hpp
+[0.422s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication__type_support.hpp
+[0.422s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication_msg__struct.hpp
+[0.422s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication__traits.hpp
+[0.423s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__struct.hpp
+[0.423s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__type_support.hpp
+[0.423s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__traits.hpp
+[0.423s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication__struct.hpp
+[0.423s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__builder.hpp
+[0.423s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__builder.hpp
+[0.423s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__struct.hpp
+[0.424s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication_msg__traits.hpp
+[0.424s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication__builder.hpp
+[0.424s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication_msg__type_support.hpp
+[0.424s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__type_support.hpp
+[0.424s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__traits.hpp
+[0.424s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.424s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.424s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.424s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.424s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_cpp.hpp
+[0.424s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication__rosidl_typesupport_fastrtps_cpp.hpp
+[0.424s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps
+[0.425s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[0.425s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__rosidl_typesupport_fastrtps_cpp.hpp
+[0.425s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.425s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.425s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.425s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.425s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.425s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication__type_support.c
+[0.426s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication_msg__rosidl_typesupport_introspection_c.h
+[0.426s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication__rosidl_typesupport_introspection_c.h
+[0.426s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication_msg__type_support.c
+[0.426s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__rosidl_typesupport_introspection_c.h
+[0.426s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__type_support.c
+[0.426s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__type_support.c
+[0.426s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_introspection_c.h
+[0.426s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so
+[0.427s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so
+[0.427s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs
+[0.427s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[0.427s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[0.427s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication_msg__type_support.cpp
+[0.427s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__type_support.cpp
+[0.427s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication__type_support.cpp
+[0.427s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication_msg__rosidl_typesupport_introspection_cpp.hpp
+[0.427s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__type_support.cpp
+[0.428s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/robot_communication__rosidl_typesupport_introspection_cpp.hpp
+[0.428s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_introspection_cpp.hpp
+[0.428s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__rosidl_typesupport_introspection_cpp.hpp
+[0.428s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so
+[0.428s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so
+[0.428s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh
+[0.428s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv
+[0.428s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info
+[0.428s] -- Installing: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.428s] -- Installing: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[0.428s] -- Installing: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.428s] -- Installing: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[0.428s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs
+[0.428s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.428s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py
+[0.428s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.428s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.428s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.428s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg
+[0.428s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py
+[0.428s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_robot_communication_msg_s.c
+[0.429s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_robot_communication_msg.py
+[0.429s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_agent_target_destinations.py
+[0.429s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_agent_target_positions.py
+[0.429s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_robot_communication_s.c
+[0.429s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_agent_target_destinations_s.c
+[0.429s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_robot_communication.py
+[0.429s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_agent_target_positions_s.c
+[0.429s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.429s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so
+[0.429s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
+[0.453s] Listing '/root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...
+[0.453s] Listing '/root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...
+[0.457s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.458s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.458s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.459s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so
+[0.459s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/msg/AgentTargetPositions.idl
+[0.459s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/msg/AgentTargetDestinations.idl
+[0.459s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/msg/RobotCommunicationMsg.idl
+[0.459s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/msg/AgentTargetPositions.msg
+[0.459s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/msg/AgentTargetDestinations.msg
+[0.460s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/msg/RobotCommunicationMsg.msg
+[0.460s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs
+[0.460s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs
+[0.460s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh
+[0.460s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv
+[0.460s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/environment/path.sh
+[0.460s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/environment/path.dsv
+[0.460s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/local_setup.bash
+[0.460s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/local_setup.sh
+[0.460s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/local_setup.zsh
+[0.460s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/local_setup.dsv
+[0.460s] -- Installing: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/package.dsv
+[0.461s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs
+[0.461s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake
+[0.461s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.462s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[0.462s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.462s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake
+[0.463s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.463s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.463s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.463s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.464s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake
+[0.464s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.464s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.464s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.464s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake
+[0.464s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.465s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake
+[0.465s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake
+[0.465s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake
+[0.465s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.465s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.465s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.466s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.466s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.466s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.466s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake
+[0.466s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake
+[0.466s] -- Up-to-date: /root/ros2_ws2/install/custom_msgs/share/custom_msgs/package.xml
+[0.467s] Invoked command in '/root/ros2_ws2/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros2_ws2/install/ros_tcp_endpoint:/root/ros2_ws2/install/navigation_unity_package:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws2/build/custom_msgs
