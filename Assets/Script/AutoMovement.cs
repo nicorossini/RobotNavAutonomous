@@ -18,6 +18,8 @@ public class AutoMovement : MonoBehaviour
 
     public bool target_found = false;
 
+    public Vector3 basecampPosition;
+
     void Start()
     {   
         navmeshagent.speed = speedMove;

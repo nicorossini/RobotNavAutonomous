@@ -13,7 +13,7 @@ public class RandomlyPosition : MonoBehaviour
     private int numberOfAgents = 4;
     public NavMeshAgent agentPrefab;
     public GameObject targetPrefab;
-    private int numberOfTargets = 4;
+    private int numberOfTargets = 5;
 
     private bool agentsPositionated = false;
     private bool targetsPositionated = false;

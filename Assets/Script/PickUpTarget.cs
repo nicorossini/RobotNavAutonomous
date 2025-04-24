@@ -5,6 +5,9 @@ public class PickUpTarget : MonoBehaviour
 {
     public bool readyForPickUp = false;
     private GameObject target;
+
+    [SerializeField]
+    public GameObject robot;
     public AutoMovement auto_movement;
 
     private float distanceArm;
@@ -12,13 +15,15 @@ public class PickUpTarget : MonoBehaviour
     private float rangeForPick = 6.5f;
     private float armPivotRotation = 0.2f;
     private GameObject[] basecamps;
-    public bool basecamp_arrived;
+    //public bool basecamp_arrived;
     private bool picked;
+    private bool waitingForNewTarget = false;
+
 
     
     void Start()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,6 +45,8 @@ public class PickUpTarget : MonoBehaviour
 
     void Update()
     {
+        if (waitingForNewTarget) return;
+
         if(auto_movement.target_found == true && auto_movement.cubeTarget != null)
         {
             target = auto_movement.cubeTarget;
@@ -53,7 +60,8 @@ public class PickUpTarget : MonoBehaviour
                 //Debug.Log(dist);
                 if(dist < 20.5)
                 {
-                    basecamp_arrived = true;
+                    robot.GetComponent<SetAgentUniqueID>().markBasecamp();
+                    //basecamp_arrived = true;
                     releaseTarget();
                 }
             }
@@ -84,14 +92,23 @@ public class PickUpTarget : MonoBehaviour
         readyForPickUp = true;
         armPivot.transform.Rotate(-15, 0, 0);
         picked = true;
+        target.GetComponent<SetTargetUniqueID>().markIsTaken(); //meaning that the target is taken from a robot
     }
     private void releaseTarget()
     {
         target.transform.SetParent(null);
         target.GetComponent<Rigidbody>().isKinematic = false;
         target.GetComponent<Rigidbody>().useGravity = true;
-        target.transform.position = auto_movement.navmeshagent.destination;
-        Debug.Log("Target released");
+        target.transform.position = auto_movement.basecampPosition;
+        //Debug.Log("Target released");
+        target.GetComponent<SetTargetUniqueID>().markAsReleased(); //set del target a true quando viene rilasciato nel basecamp
+
+        picked = false;
+        readyForPickUp = false;
+        auto_movement.target_found = false;
+        auto_movement.cubeTarget = null;
+        target = null;
+        waitingForNewTarget = true;
     }
 
     private void foundNearestBaseCamp(Vector3 navPosition)
@@ -116,7 +133,13 @@ public class PickUpTarget : MonoBehaviour
         if (nearestCamp != null)
         {
             auto_movement.navmeshagent.SetDestination(nearestCamp.transform.position);
+            auto_movement.basecampPosition = nearestCamp.transform.position;
             Debug.Log("Nearest BaseCamp: " + nearestCamp.transform.position + " at distance: " + minDistance);
         }
+    }
+
+    public void reactivate()
+    {
+        waitingForNewTarget = false;
     }
 }

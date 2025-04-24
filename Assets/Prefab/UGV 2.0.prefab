@@ -118460,7 +118460,7 @@ GameObject:
   - component: {fileID: 172938130301646497}
   - component: {fileID: 5271909590033263008}
   - component: {fileID: 1156826056687630709}
-  - component: {fileID: 6506180245212454902}
+  - component: {fileID: 5957203953809601979}
   m_Layer: 0
   m_Name: Arm nose
   m_TagString: Arm nose
@@ -118541,7 +118541,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6506180245212454902
+--- !u!114 &5957203953809601979
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118554,6 +118554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   readyForPickUp: 0
+  robot: {fileID: 5954167748571231152}
   auto_movement: {fileID: 7264565662176525136}
   armPivot: {fileID: 2546505298147427548}
 --- !u!1 &5228414337830427396
@@ -135060,6 +135061,9 @@ GameObject:
   - component: {fileID: 8628791224920732973}
   - component: {fileID: 7837015752302074192}
   - component: {fileID: 7264565662176525136}
+  - component: {fileID: -5306619998481495756}
+  - component: {fileID: 1409507498981677486}
+  - component: {fileID: 421754244905063430}
   m_Layer: 0
   m_Name: UGV 2.0
   m_TagString: NavMeshRobot
@@ -135208,6 +135212,48 @@ MonoBehaviour:
   arrived: 0
   distance: 0
   target_found: 0
+  basecampPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &-5306619998481495756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5954167748571231152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cd34830e5d3743dd81786236477f6a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueID: 
+  basecamp: 0
+  has_target: 0
+--- !u!114 &1409507498981677486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5954167748571231152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d105f5b21bc6847c2bde202cd2a00054, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armNose: {fileID: 5214440651662383958}
+--- !u!114 &421754244905063430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5954167748571231152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 682d543cfe2124ccf8217584ad4aa8cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armNose: {fileID: 5214440651662383958}
 --- !u!1 &5956261122982968185
 GameObject:
   m_ObjectHideFlags: 0
