@@ -5,7 +5,11 @@ In the first shell write the command to run the Ros_TCP_Endpoint:
 ```
 ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=ros_ip
 ```
-In another shell put the command to run the ROS Node:
+In second shell put the command to run the ROS Node:
 ```
 ros2 run navigation_unity_package agent_distance_subscriber
+```
+In the last shell write the command to run the second ROS Node:
+```
+ros2 run navigation_unity_package communication_node
 ```
