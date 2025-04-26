@@ -142,4 +142,13 @@ public class PickUpTarget : MonoBehaviour
     {
         waitingForNewTarget = false;
     }
+
+    public void setReadyForPickupTrue()
+    {
+        readyForPickUp = true;
+    }
+    public void setReadyForPickupFalse()
+    {
+        readyForPickUp = false;
+    }
 }

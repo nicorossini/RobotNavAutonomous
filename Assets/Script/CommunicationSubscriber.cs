@@ -5,6 +5,7 @@ using RosMessageTypes.Custom;
 using Unity.Robotics.ROSTCPConnector;
 using Unity.VisualScripting;
 using UnityEngine.AI;
+using System.Collections;
 
 
 public class CommunicationSubscriber : MonoBehaviour
@@ -12,6 +13,8 @@ public class CommunicationSubscriber : MonoBehaviour
     private ROSConnection ros;
     private string myAgentID;
     public GameObject armNose;
+
+    GameObject received_target;
     
     void Start()
     {
@@ -51,7 +54,7 @@ public class CommunicationSubscriber : MonoBehaviour
 
             Debug.Log($"Target ID: {targetId}, distanza da {msg.agent_id}: {received_distance}");
 
-            GameObject received_target = searchTargetByID(targetId);
+            received_target = searchTargetByID(targetId);
             if (received_target == null)
             {
                 Debug.LogWarning($"Target con ID {targetId} non trovato!");
@@ -76,9 +79,26 @@ public class CommunicationSubscriber : MonoBehaviour
             autoMovement.cubeTarget = received_target;
             autoMovement.target_found = true;
             armNose.GetComponent<PickUpTarget>().reactivate();
+            armNose.GetComponent<PickUpTarget>().setReadyForPickupTrue();
             break;
         }
 
+    }
+
+    void Update()
+    {
+        if(received_target == null)
+        {
+            return;
+        }
+        else
+        {
+            float distance = Vector3.Distance(transform.position, received_target.transform.position);
+            if(distance < 20.5f)
+            {
+                armNose.GetComponent<PickUpTarget>().setReadyForPickupFalse();
+            }
+        }
     }
 
     private GameObject searchAgentByID(string id)

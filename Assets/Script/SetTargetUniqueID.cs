@@ -30,7 +30,7 @@ public class SetTargetUniqueID : MonoBehaviour
         released_at_base = true;
     }
 
-     public void markIsTaken()
+    public void markIsTaken()
     {
         is_taken = true;
     }
