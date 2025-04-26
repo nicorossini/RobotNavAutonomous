@@ -24,19 +24,19 @@ class AgentDistanceSubscriber(Node):
         self.get_logger().info(f"target per agent: {num_target}")
 
         available_targets = set(range(num_target))
-        assignments = []  # Lista delle assegnazioni (distanza, agente, target)
+        assignments = []
         self.get_logger().info(f"distance lenght: {msg.target_distances}")
         self.get_logger().info(f"available targets: {available_targets}")
-        #Costruisci tutte le possibili assegnazioni con le loro distanze
+
         for agent_idx, agent in enumerate(msg.agents):
             self.get_logger().info(f"agent_idx: {agent_idx}")
             for target_idx in available_targets:
                  distance_idx = (agent_idx * num_target) + target_idx
                  self.get_logger().info(f"distance idx: {distance_idx}")
-                 distance = msg.target_distances[distance_idx]  #Distanza agente-target
+                 distance = msg.target_distances[distance_idx]
                  assignments.append((distance, agent_idx, target_idx))
 
-        # Ordina le assegnazioni per distanza crescente
+
         assignments.sort()
         self.get_logger().info(f"Assignments: {assignments}")
 
@@ -52,8 +52,8 @@ class AgentDistanceSubscriber(Node):
                 agent = msg.agents[agent_idx]
                 target = msg.target_positions[target_idx]
 
-                self.get_logger().info(f"👾 Agente {agent_idx}: {agent.position.x}, {agent.position.y}, {agent.position.z}")
-                self.get_logger().info(f"🎯 Target assegnato {target_idx}: {target.x}, {target.y}, {target.z} (distanza: {distance})")
+                self.get_logger().info(f"Agente {agent_idx}: {agent.position.x}, {agent.position.y}, {agent.position.z}")
+                self.get_logger().info(f"Target assegnato {target_idx}: {target.x}, {target.y}, {target.z} (distanza: {distance})")
 
                 target_position = Point(x=target.x, y=target.y, z=target.z)
                 agent_position = Pose(position=agent.position)

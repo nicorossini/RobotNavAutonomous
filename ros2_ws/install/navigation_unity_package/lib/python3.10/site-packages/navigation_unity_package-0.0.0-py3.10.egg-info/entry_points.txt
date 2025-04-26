@@ -1,5 +1,6 @@
 [console_scripts]
 agent_distance_subscriber = navigation_unity_package.agent_distance_subscriber:main
 agent_target_publisher = navigation_unity_package.agent_target_publisher:main
+communication_node = navigation_unity_package.communication_node:main
 target_subscriber = navigation_unity_package.my_subscriber:main
 

@@ -1,0 +1,362 @@
+[0.000000] (-) TimerEvent: {}
+[0.000378] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.000398] (navigation_unity_package) JobQueued: {'identifier': 'navigation_unity_package', 'dependencies': OrderedDict()}
+[0.000405] (ros_tcp_endpoint) JobQueued: {'identifier': 'ros_tcp_endpoint', 'dependencies': OrderedDict()}
+[0.000416] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.004397] (navigation_unity_package) JobStarted: {'identifier': 'navigation_unity_package'}
+[0.007302] (ros_tcp_endpoint) JobStarted: {'identifier': 'ros_tcp_endpoint'}
+[0.009815] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.010636] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'build'}
+[0.010653] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/build/custom_msgs', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.64.1 55227 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/ros2_ws/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/ros_tcp_endpoint:/home/ubuntu/ros2_ws/install/navigation_unity_package:/home/ubuntu/ros2_ws/install/custom_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/custom_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.64.1 55227 192.168.64.7 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/navigation_unity_package/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/custom_msgs:/home/ubuntu/ros2_ws/install/ros_tcp_endpoint:/home/ubuntu/ros2_ws/install/navigation_unity_package:/opt/ros/humble')]), 'shell': False}
+[0.099971] (-) TimerEvent: {}
+[0.138973] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.158279] (custom_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.178605] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.180836] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.185063] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.191228] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.198295] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.200029] (-) TimerEvent: {}
+[0.217781] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.300124] (-) TimerEvent: {}
+[0.379001] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.400340] (-) TimerEvent: {}
+[0.476496] (ros_tcp_endpoint) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ros_tcp_endpoint', 'build', '--build-base', '/home/ubuntu/ros2_ws/build/ros_tcp_endpoint/build', 'install', '--record', '/home/ubuntu/ros2_ws/build/ros_tcp_endpoint/install.log', '--install-scripts', '$base/lib/ros_tcp_endpoint', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/ros2_ws/src/ROS-TCP-Endpoint-main-ros2', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.64.1 55227 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/ros2_ws/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/ros2_ws/src', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/ubuntu/ros2_ws/install/ros_tcp_endpoint:/home/ubuntu/ros2_ws/install/navigation_unity_package:/home/ubuntu/ros2_ws/install/custom_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/ubuntu/ros2_ws/build/ros_tcp_endpoint', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.64.1 55227 192.168.64.7 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ros2_ws/build/ros_tcp_endpoint/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/navigation_unity_package/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/ros2_ws/install/custom_msgs'}, 'shell': False}
+[0.478504] (navigation_unity_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/navigation_unity_package', 'build', '--build-base', '/home/ubuntu/ros2_ws/build/navigation_unity_package/build', 'install', '--record', '/home/ubuntu/ros2_ws/build/navigation_unity_package/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/ros2_ws/src/navigation_unity_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.64.1 55227 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/ros2_ws/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/ros2_ws/src', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/ubuntu/ros2_ws/install/ros_tcp_endpoint:/home/ubuntu/ros2_ws/install/navigation_unity_package:/home/ubuntu/ros2_ws/install/custom_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/ubuntu/ros2_ws/build/navigation_unity_package', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.64.1 55227 192.168.64.7 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ros2_ws/build/navigation_unity_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/navigation_unity_package/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/navigation_unity_package/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/ros2_ws/install/custom_msgs'}, 'shell': False}
+[0.500530] (-) TimerEvent: {}
+[0.563281] (ros_tcp_endpoint) StderrLine: {'line': b"/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[0.563373] (ros_tcp_endpoint) StderrLine: {'line': b'  warnings.warn(\n'}
+[0.566479] (navigation_unity_package) StdoutLine: {'line': b'running egg_info\n'}
+[0.566570] (ros_tcp_endpoint) StdoutLine: {'line': b'running egg_info\n'}
+[0.566714] (navigation_unity_package) StdoutLine: {'line': b'writing ../../build/navigation_unity_package/navigation_unity_package.egg-info/PKG-INFO\n'}
+[0.566765] (ros_tcp_endpoint) StdoutLine: {'line': b'writing ../../build/ros_tcp_endpoint/ros_tcp_endpoint.egg-info/PKG-INFO\n'}
+[0.566886] (navigation_unity_package) StdoutLine: {'line': b'writing dependency_links to ../../build/navigation_unity_package/navigation_unity_package.egg-info/dependency_links.txt\n'}
+[0.567247] (ros_tcp_endpoint) StdoutLine: {'line': b'writing dependency_links to ../../build/ros_tcp_endpoint/ros_tcp_endpoint.egg-info/dependency_links.txt\n'}
+[0.567337] (navigation_unity_package) StdoutLine: {'line': b'writing entry points to ../../build/navigation_unity_package/navigation_unity_package.egg-info/entry_points.txt\n'}
+[0.567520] (ros_tcp_endpoint) StdoutLine: {'line': b'writing entry points to ../../build/ros_tcp_endpoint/ros_tcp_endpoint.egg-info/entry_points.txt\n'}
+[0.567546] (navigation_unity_package) StdoutLine: {'line': b'writing requirements to ../../build/navigation_unity_package/navigation_unity_package.egg-info/requires.txt\n'}
+[0.567583] (ros_tcp_endpoint) StdoutLine: {'line': b'writing requirements to ../../build/ros_tcp_endpoint/ros_tcp_endpoint.egg-info/requires.txt\n'}
+[0.567604] (navigation_unity_package) StdoutLine: {'line': b'writing top-level names to ../../build/navigation_unity_package/navigation_unity_package.egg-info/top_level.txt\n'}
+[0.567724] (ros_tcp_endpoint) StdoutLine: {'line': b'writing top-level names to ../../build/ros_tcp_endpoint/ros_tcp_endpoint.egg-info/top_level.txt\n'}
+[0.568433] (navigation_unity_package) StdoutLine: {'line': b"reading manifest file '../../build/navigation_unity_package/navigation_unity_package.egg-info/SOURCES.txt'\n"}
+[0.568698] (ros_tcp_endpoint) StdoutLine: {'line': b"reading manifest file '../../build/ros_tcp_endpoint/ros_tcp_endpoint.egg-info/SOURCES.txt'\n"}
+[0.568922] (ros_tcp_endpoint) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[0.569134] (navigation_unity_package) StdoutLine: {'line': b"writing manifest file '../../build/navigation_unity_package/navigation_unity_package.egg-info/SOURCES.txt'\n"}
+[0.569188] (navigation_unity_package) StdoutLine: {'line': b'running build\n'}
+[0.569281] (ros_tcp_endpoint) StdoutLine: {'line': b"writing manifest file '../../build/ros_tcp_endpoint/ros_tcp_endpoint.egg-info/SOURCES.txt'\n"}
+[0.569410] (navigation_unity_package) StdoutLine: {'line': b'running build_py\n'}
+[0.569435] (ros_tcp_endpoint) StdoutLine: {'line': b'running build\n'}
+[0.569455] (ros_tcp_endpoint) StdoutLine: {'line': b'running build_py\n'}
+[0.569473] (navigation_unity_package) StdoutLine: {'line': b'running install\n'}
+[0.569535] (navigation_unity_package) StdoutLine: {'line': b'running install_lib\n'}
+[0.569716] (ros_tcp_endpoint) StdoutLine: {'line': b'running install\n'}
+[0.569850] (ros_tcp_endpoint) StdoutLine: {'line': b'running install_lib\n'}
+[0.570060] (navigation_unity_package) StdoutLine: {'line': b'running install_data\n'}
+[0.570110] (navigation_unity_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.570583] (ros_tcp_endpoint) StdoutLine: {'line': b'running install_data\n'}
+[0.570643] (ros_tcp_endpoint) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.571243] (navigation_unity_package) StdoutLine: {'line': b"removing '/home/ubuntu/ros2_ws/install/navigation_unity_package/lib/python3.10/site-packages/navigation_unity_package-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.571303] (ros_tcp_endpoint) StdoutLine: {'line': b"removing '/home/ubuntu/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages/ros_tcp_endpoint-0.0.1-py3.10.egg-info' (and everything under it)\n"}
+[0.571495] (navigation_unity_package) StdoutLine: {'line': b'Copying ../../build/navigation_unity_package/navigation_unity_package.egg-info to /home/ubuntu/ros2_ws/install/navigation_unity_package/lib/python3.10/site-packages/navigation_unity_package-0.0.0-py3.10.egg-info\n'}
+[0.571524] (ros_tcp_endpoint) StdoutLine: {'line': b'Copying ../../build/ros_tcp_endpoint/ros_tcp_endpoint.egg-info to /home/ubuntu/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages/ros_tcp_endpoint-0.0.1-py3.10.egg-info\n'}
+[0.572167] (navigation_unity_package) StdoutLine: {'line': b'running install_scripts\n'}
+[0.572277] (ros_tcp_endpoint) StdoutLine: {'line': b'running install_scripts\n'}
+[0.580421] (navigation_unity_package) StdoutLine: {'line': b'Installing agent_distance_subscriber script to /home/ubuntu/ros2_ws/install/navigation_unity_package/lib/navigation_unity_package\n'}
+[0.580580] (navigation_unity_package) StdoutLine: {'line': b'Installing agent_target_publisher script to /home/ubuntu/ros2_ws/install/navigation_unity_package/lib/navigation_unity_package\n'}
+[0.580609] (navigation_unity_package) StdoutLine: {'line': b'Installing target_subscriber script to /home/ubuntu/ros2_ws/install/navigation_unity_package/lib/navigation_unity_package\n'}
+[0.580842] (navigation_unity_package) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/ros2_ws/build/navigation_unity_package/install.log'\n"}
+[0.580898] (ros_tcp_endpoint) StdoutLine: {'line': b'Installing default_server_endpoint script to /home/ubuntu/ros2_ws/install/ros_tcp_endpoint/lib/ros_tcp_endpoint\n'}
+[0.581204] (ros_tcp_endpoint) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/ros2_ws/build/ros_tcp_endpoint/install.log'\n"}
+[0.587007] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.594061] (navigation_unity_package) CommandEnded: {'returncode': 0}
+[0.600312] (navigation_unity_package) JobEnded: {'identifier': 'navigation_unity_package', 'rc': 0}
+[0.600922] (-) TimerEvent: {}
+[0.601151] (ros_tcp_endpoint) CommandEnded: {'returncode': 0}
+[0.604816] (ros_tcp_endpoint) JobEnded: {'identifier': 'ros_tcp_endpoint', 'rc': 0}
+[0.650490] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.659406] (custom_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.668679] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.668728] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.668752] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[0.683457] (custom_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.694806] (custom_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.695400] (custom_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.697887] (custom_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.712952] (-) TimerEvent: {}
+[0.728903] (custom_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[0.734519] (custom_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/ros2_ws/build/custom_msgs\n'}
+[0.744449] (custom_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.747892] (custom_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.751812] (custom_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_custom_msgs\n'}
+[0.813079] (-) TimerEvent: {}
+[0.841543] (custom_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.841762] (custom_msgs) StdoutLine: {'line': b'writing custom_msgs.egg-info/PKG-INFO\n'}
+[0.841961] (custom_msgs) StdoutLine: {'line': b'writing dependency_links to custom_msgs.egg-info/dependency_links.txt\n'}
+[0.842072] (custom_msgs) StdoutLine: {'line': b'writing top-level names to custom_msgs.egg-info/top_level.txt\n'}
+[0.842974] (custom_msgs) StdoutLine: {'line': b"reading manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[0.843352] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[0.855813] (custom_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_custom_msgs_egg\n'}
+[0.912533] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_generator_c\x1b[0m\n'}
+[0.913210] (custom_msgs) StdoutLine: {'line': b'[  4%] Built target custom_msgs__cpp\n'}
+[0.913262] (-) TimerEvent: {}
+[0.917159] (custom_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[0.917221] (custom_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[0.917246] (custom_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/agent_target_positions__functions.c.o\x1b[0m\n'}
+[0.917295] (custom_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[0.953070] (custom_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/agent_target_destinations__functions.c.o\x1b[0m\n'}
+[0.973306] (custom_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/agent_status__functions.c.o\x1b[0m\n'}
+[0.993626] (custom_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[1.013355] (-) TimerEvent: {}
+[1.013786] (custom_msgs) StdoutLine: {'line': b'[ 19%] Built target custom_msgs__rosidl_generator_c\n'}
+[1.017566] (custom_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.051825] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.057158] (custom_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/agent_target_positions__type_support.cpp.o\x1b[0m\n'}
+[1.058972] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.066480] (custom_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/agent_target_positions__type_support.cpp.o\x1b[0m\n'}
+[1.069144] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.075924] (custom_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/agent_target_positions__type_support.cpp.o\x1b[0m\n'}
+[1.113442] (-) TimerEvent: {}
+[1.168327] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.174621] (custom_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_positions__type_support_c.cpp.o\x1b[0m\n'}
+[1.213594] (-) TimerEvent: {}
+[1.247968] (custom_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/agent_target_destinations__type_support.cpp.o\x1b[0m\n'}
+[1.313691] (-) TimerEvent: {}
+[1.334844] (custom_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_target_destinations__type_support_c.cpp.o\x1b[0m\n'}
+[1.338877] (custom_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/agent_target_destinations__type_support.cpp.o\x1b[0m\n'}
+[1.353830] (custom_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/agent_target_destinations__type_support.cpp.o\x1b[0m\n'}
+[1.370667] (custom_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/agent_status__type_support.cpp.o\x1b[0m\n'}
+[1.413791] (-) TimerEvent: {}
+[1.462624] (custom_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/agent_status__type_support_c.cpp.o\x1b[0m\n'}
+[1.466558] (custom_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[1.486307] (custom_msgs) StdoutLine: {'line': b'[ 44%] Built target custom_msgs__rosidl_typesupport_cpp\n'}
+[1.489909] (custom_msgs) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.506187] (custom_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/agent_status__type_support.cpp.o\x1b[0m\n'}
+[1.513905] (-) TimerEvent: {}
+[1.532405] (custom_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/agent_status__type_support.cpp.o\x1b[0m\n'}
+[1.591979] (custom_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[1.613992] (-) TimerEvent: {}
+[1.622588] (custom_msgs) StdoutLine: {'line': b'[ 53%] Built target custom_msgs__rosidl_typesupport_fastrtps_c\n'}
+[1.626938] (custom_msgs) StdoutLine: {'line': b'[ 55%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.641564] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.646279] (custom_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/agent_target_positions__type_support.c.o\x1b[0m\n'}
+[1.667388] (custom_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[1.667495] (custom_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/agent_target_destinations__type_support.c.o\x1b[0m\n'}
+[1.689413] (custom_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/agent_status__type_support.c.o\x1b[0m\n'}
+[1.700906] (custom_msgs) StdoutLine: {'line': b'[ 63%] Built target custom_msgs__rosidl_typesupport_introspection_cpp\n'}
+[1.705464] (custom_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.714083] (-) TimerEvent: {}
+[1.715911] (custom_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[1.717985] (custom_msgs) StdoutLine: {'line': b'[ 68%] Built target custom_msgs__rosidl_typesupport_introspection_c\n'}
+[1.743974] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[1.747539] (custom_msgs) StdoutLine: {'line': b'[ 68%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.748119] (custom_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/agent_target_positions__type_support.cpp.o\x1b[0m\n'}
+[1.748201] (custom_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/agent_target_destinations__type_support.cpp.o\x1b[0m\n'}
+[1.748228] (custom_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/agent_status__type_support.cpp.o\x1b[0m\n'}
+[1.761494] (custom_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[1.776206] (custom_msgs) StdoutLine: {'line': b'[ 76%] Built target custom_msgs__rosidl_typesupport_c\n'}
+[1.781964] (custom_msgs) StdoutLine: {'line': b'[ 76%] Built target custom_msgs\n'}
+[1.787649] (custom_msgs) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[1.814176] (-) TimerEvent: {}
+[1.926088] (-) TimerEvent: {}
+[1.976989] (custom_msgs) StdoutLine: {'line': b'[ 78%] Built target custom_msgs__py\n'}
+[1.980540] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_generator_py\x1b[0m\n'}
+[1.985599] (custom_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_agent_target_positions_s.c.o\x1b[0m\n'}
+[1.985654] (custom_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_agent_target_destinations_s.c.o\x1b[0m\n'}
+[1.986032] (custom_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_agent_status_s.c.o\x1b[0m\n'}
+[2.030021] (-) TimerEvent: {}
+[2.063099] (custom_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/libcustom_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[2.079357] (custom_msgs) StdoutLine: {'line': b'[ 87%] Built target custom_msgs__rosidl_generator_py\n'}
+[2.083142] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[2.083219] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[2.083258] (custom_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[2.088061] (custom_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[2.088132] (custom_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.088160] (custom_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[2.130116] (-) TimerEvent: {}
+[2.151801] (custom_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[2.151913] (custom_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[2.151947] (custom_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[2.168187] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[2.168283] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.168638] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_c__pyext\n'}
+[2.174072] (custom_msgs) CommandEnded: {'returncode': 0}
+[2.197089] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'install'}
+[2.201875] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/ros2_ws/build/custom_msgs'], 'cwd': '/home/ubuntu/ros2_ws/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.64.1 55227 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/ros2_ws/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/ros_tcp_endpoint:/home/ubuntu/ros2_ws/install/navigation_unity_package:/home/ubuntu/ros2_ws/install/custom_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/custom_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.64.1 55227 192.168.64.7 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/navigation_unity_package/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/custom_msgs:/home/ubuntu/ros2_ws/install/ros_tcp_endpoint:/home/ubuntu/ros2_ws/install/navigation_unity_package:/opt/ros/humble')]), 'shell': False}
+[2.204563] (custom_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.204700] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs\n'}
+[2.204757] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[2.204782] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[2.204907] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.204947] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[2.204997] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__struct.h\n'}
+[2.205030] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__functions.h\n'}
+[2.205163] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_status__functions.c\n'}
+[2.205192] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_status__type_support.h\n'}
+[2.205212] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__functions.h\n'}
+[2.205240] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__functions.c\n'}
+[2.205309] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__struct.h\n'}
+[2.205344] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__type_support.h\n'}
+[2.205436] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__functions.c\n'}
+[2.205509] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_status__struct.h\n'}
+[2.205613] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__type_support.h\n'}
+[2.205651] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_status__functions.h\n'}
+[2.205750] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/agent_status.h\n'}
+[2.205931] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/agent_target_destinations.h\n'}
+[2.206005] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/agent_target_positions.h\n'}
+[2.206119] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.sh\n'}
+[2.206158] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.dsv\n'}
+[2.206245] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so\n'}
+[2.206460] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so" to ""\n'}
+[2.206545] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[2.206632] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[2.206684] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.206714] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[2.206799] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__rosidl_typesupport_fastrtps_c.h\n'}
+[2.206836] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_status__rosidl_typesupport_fastrtps_c.h\n'}
+[2.206859] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_c.h\n'}
+[2.206933] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[2.206967] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[2.206996] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[2.207026] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[2.207102] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/agent_status.hpp\n'}
+[2.207131] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/agent_target_destinations.hpp\n'}
+[2.207192] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[2.207215] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/agent_target_positions.hpp\n'}
+[2.207254] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[2.207316] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_status__type_support.hpp\n'}
+[2.207381] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_status__struct.hpp\n'}
+[2.207442] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__type_support.hpp\n'}
+[2.207523] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_status__traits.hpp\n'}
+[2.207696] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__traits.hpp\n'}
+[2.207755] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__builder.hpp\n'}
+[2.207792] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__type_support.hpp\n'}
+[2.207871] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__traits.hpp\n'}
+[2.207909] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_status__builder.hpp\n'}
+[2.207974] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__builder.hpp\n'}
+[2.208028] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__struct.hpp\n'}
+[2.208064] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__struct.hpp\n'}
+[2.208157] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[2.208246] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[2.208325] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.208375] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[2.208407] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps\n'}
+[2.208432] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.208459] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.208560] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.208655] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.208679] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[2.208708] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[2.208750] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[2.208799] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.208837] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[2.208896] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__type_support.c\n'}
+[2.208916] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_introspection_c.h\n'}
+[2.208936] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_status__rosidl_typesupport_introspection_c.h\n'}
+[2.208967] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__type_support.c\n'}
+[2.208987] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_status__type_support.c\n'}
+[2.209006] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__rosidl_typesupport_introspection_c.h\n'}
+[2.209135] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so\n'}
+[2.209316] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[2.209435] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so\n'}
+[2.209531] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so" to ""\n'}
+[2.209555] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[2.209595] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[2.209681] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[2.209738] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__type_support.cpp\n'}
+[2.209792] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_positions__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.209817] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.209845] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.209922] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_target_destinations__type_support.cpp\n'}
+[2.209942] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/agent_status__type_support.cpp\n'}
+[2.210042] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[2.210256] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[2.210324] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so\n'}
+[2.210478] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[2.210548] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh\n'}
+[2.210580] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv\n'}
+[2.210669] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info\n'}
+[2.210708] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[2.210740] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[2.210775] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[2.210795] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[2.210867] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs\n'}
+[2.210900] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.210969] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.211053] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.211117] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[2.211173] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py\n'}
+[2.211233] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.211310] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.211382] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg\n'}
+[2.211410] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_agent_target_positions_s.c\n'}
+[2.211478] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_agent_status.py\n'}
+[2.211543] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_agent_target_positions.py\n'}
+[2.211606] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py\n'}
+[2.211627] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_agent_target_destinations_s.c\n'}
+[2.211668] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_agent_status_s.c\n'}
+[2.211713] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_agent_target_destinations.py\n'}
+[2.211776] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so\n'}
+[2.241931] (-) TimerEvent: {}
+[2.276375] (custom_msgs) StdoutLine: {'line': b"Listing '/home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...\n"}
+[2.276472] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py'...\n"}
+[2.276499] (custom_msgs) StdoutLine: {'line': b"Listing '/home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...\n"}
+[2.276520] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py'...\n"}
+[2.276541] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_agent_status.py'...\n"}
+[2.276561] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_agent_target_destinations.py'...\n"}
+[2.276580] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_agent_target_positions.py'...\n"}
+[2.278967] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.279129] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[2.279208] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.279280] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[2.279345] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.279457] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[2.279537] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so\n'}
+[2.279714] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so" to ""\n'}
+[2.279862] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/msg/AgentTargetPositions.idl\n'}
+[2.279948] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/msg/AgentTargetDestinations.idl\n'}
+[2.279999] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/msg/AgentStatus.idl\n'}
+[2.280058] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/msg/AgentTargetPositions.msg\n'}
+[2.280078] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/msg/AgentTargetDestinations.msg\n'}
+[2.280104] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/msg/AgentStatus.msg\n'}
+[2.280139] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs\n'}
+[2.280244] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs\n'}
+[2.280301] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh\n'}
+[2.280342] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv\n'}
+[2.280381] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.sh\n'}
+[2.280450] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.dsv\n'}
+[2.280486] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.bash\n'}
+[2.280539] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.sh\n'}
+[2.280559] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.zsh\n'}
+[2.280578] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.dsv\n'}
+[2.280602] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/package.dsv\n'}
+[2.280642] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs\n'}
+[2.280806] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake\n'}
+[2.280827] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.281029] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.281058] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.281459] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake\n'}
+[2.281655] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.281688] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.281840] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.281889] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.282022] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake\n'}
+[2.282152] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.282218] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.282250] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.282355] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[2.282415] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.282546] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake\n'}
+[2.282602] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.282623] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[2.282666] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.282690] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.282744] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.282788] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.282881] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.282910] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.282930] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake\n'}
+[2.282951] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake\n'}
+[2.282970] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/install/custom_msgs/share/custom_msgs/package.xml\n'}
+[2.284177] (custom_msgs) CommandEnded: {'returncode': 0}
+[2.291128] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 0}
+[2.291789] (-) EventReactorShutdown: {}

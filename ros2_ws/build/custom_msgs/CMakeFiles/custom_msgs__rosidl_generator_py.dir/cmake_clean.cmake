@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_agent_status_s.c.o"
+  "CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_agent_status_s.c.o.d"
   "CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_agent_target_destinations_s.c.o"
   "CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_agent_target_destinations_s.c.o.d"
   "CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_agent_target_positions_s.c.o"

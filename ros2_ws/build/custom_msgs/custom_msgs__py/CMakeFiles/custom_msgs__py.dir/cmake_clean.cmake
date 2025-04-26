@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/custom_msgs/msg/__init__.py"
+  "../rosidl_generator_py/custom_msgs/msg/_agent_status.py"
+  "../rosidl_generator_py/custom_msgs/msg/_agent_status_s.c"
   "../rosidl_generator_py/custom_msgs/msg/_agent_target_destinations.py"
   "../rosidl_generator_py/custom_msgs/msg/_agent_target_destinations_s.c"
   "../rosidl_generator_py/custom_msgs/msg/_agent_target_positions.py"

@@ -1,10 +1,13 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/agent_status__type_support.cpp.o"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/agent_status__type_support.cpp.o.d"
   "CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/agent_target_destinations__type_support.cpp.o"
   "CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/agent_target_destinations__type_support.cpp.o.d"
   "CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/agent_target_positions__type_support.cpp.o"
   "CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/agent_target_positions__type_support.cpp.o.d"
   "libcustom_msgs__rosidl_typesupport_c.pdb"
   "libcustom_msgs__rosidl_typesupport_c.so"
+  "rosidl_typesupport_c/custom_msgs/msg/agent_status__type_support.cpp"
   "rosidl_typesupport_c/custom_msgs/msg/agent_target_destinations__type_support.cpp"
   "rosidl_typesupport_c/custom_msgs/msg/agent_target_positions__type_support.cpp"
 )

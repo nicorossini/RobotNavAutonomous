@@ -76,6 +76,11 @@ CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_t
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__struct.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__traits.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__type_support.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/agent_status.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__type_support.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -95,6 +100,7 @@ rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: /opt/ros/humble
 rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: rosidl_adapter/custom_msgs/msg/AgentTargetPositions.idl
 rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: rosidl_adapter/custom_msgs/msg/AgentTargetDestinations.idl
+rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: rosidl_adapter/custom_msgs/msg/AgentStatus.idl
 rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -187,9 +193,29 @@ rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__traits.hp
 rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__type_support.hpp
 
+rosidl_generator_cpp/custom_msgs/msg/agent_status.hpp: rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/agent_status.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__builder.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__struct.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__traits.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__type_support.hpp
+
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/agent_status.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/agent_target_destinations.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__type_support.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__builder.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__struct.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__traits.hpp

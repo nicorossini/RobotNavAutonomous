@@ -4,7 +4,8 @@
   "template_dir": "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
     "/home/ubuntu/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/AgentTargetPositions.idl",
-    "/home/ubuntu/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/AgentTargetDestinations.idl"
+    "/home/ubuntu/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/AgentTargetDestinations.idl",
+    "/home/ubuntu/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/AgentStatus.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -88,6 +89,7 @@
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
     "/home/ubuntu/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/AgentTargetPositions.idl",
     "/home/ubuntu/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/AgentTargetDestinations.idl",
+    "/home/ubuntu/ros2_ws/build/custom_msgs/rosidl_adapter/custom_msgs/msg/AgentStatus.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",

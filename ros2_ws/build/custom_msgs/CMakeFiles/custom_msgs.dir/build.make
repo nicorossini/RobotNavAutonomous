@@ -68,6 +68,7 @@ include CMakeFiles/custom_msgs.dir/progress.make
 
 CMakeFiles/custom_msgs: /home/ubuntu/ros2_ws/src/custom_msgs/msg/AgentTargetPositions.msg
 CMakeFiles/custom_msgs: /home/ubuntu/ros2_ws/src/custom_msgs/msg/AgentTargetDestinations.msg
+CMakeFiles/custom_msgs: /home/ubuntu/ros2_ws/src/custom_msgs/msg/AgentStatus.msg
 CMakeFiles/custom_msgs: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/custom_msgs: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/custom_msgs: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl

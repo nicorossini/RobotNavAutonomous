@@ -1,7 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/custom_msgs__cpp"
+  "rosidl_generator_cpp/custom_msgs/msg/agent_status.hpp"
   "rosidl_generator_cpp/custom_msgs/msg/agent_target_destinations.hpp"
   "rosidl_generator_cpp/custom_msgs/msg/agent_target_positions.hpp"
+  "rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__builder.hpp"
+  "rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__struct.hpp"
+  "rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__traits.hpp"
+  "rosidl_generator_cpp/custom_msgs/msg/detail/agent_status__type_support.hpp"
   "rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__builder.hpp"
   "rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__struct.hpp"
   "rosidl_generator_cpp/custom_msgs/msg/detail/agent_target_destinations__traits.hpp"

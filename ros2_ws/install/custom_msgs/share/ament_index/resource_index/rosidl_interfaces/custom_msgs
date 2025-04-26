@@ -1,3 +1,5 @@
+msg/AgentStatus.idl
+msg/AgentStatus.msg
 msg/AgentTargetDestinations.idl
 msg/AgentTargetDestinations.msg
 msg/AgentTargetPositions.idl

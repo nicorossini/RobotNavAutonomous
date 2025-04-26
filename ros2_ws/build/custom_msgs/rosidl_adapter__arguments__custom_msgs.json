@@ -2,6 +2,7 @@
   "package_name": "custom_msgs",
   "non_idl_tuples": [
     "/home/ubuntu/ros2_ws/src/custom_msgs:msg/AgentTargetPositions.msg",
-    "/home/ubuntu/ros2_ws/src/custom_msgs:msg/AgentTargetDestinations.msg"
+    "/home/ubuntu/ros2_ws/src/custom_msgs:msg/AgentTargetDestinations.msg",
+    "/home/ubuntu/ros2_ws/src/custom_msgs:msg/AgentStatus.msg"
   ]
 }
