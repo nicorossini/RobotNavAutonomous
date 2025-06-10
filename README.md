@@ -47,7 +47,7 @@ ros2 run navigation_unity_package agent_distance_subscriber
 ros2 run navigation_unity_package communication_node
 ```
 
-#### How it wors
+### How it work
 
 ### Unity Simulation
 
