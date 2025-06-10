@@ -47,7 +47,8 @@ ros2 run navigation_unity_package agent_distance_subscriber
 ros2 run navigation_unity_package communication_node
 ```
 
-### How it work
+### How it works
+[Here](https://github.com/nicorossini/RobotNavAutonomous/wiki/How-it-works) you can find the exmplanation of the message exchange during the simulation
 
 ### Unity Simulation
 
